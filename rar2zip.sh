@@ -8,20 +8,21 @@ if hash unrar 2>/dev/null; then
 	# Body
 	atual=`pwd`
 	for arquivo in *.rar; do
-	   temp=/tmp/$arquivo
-	   if [ ! -e $temp ]; then
-    		mkdir $temp
+	   temp=/tmp/"$arquivo"
+	   echo $temp	
+	   if [ ! -e "$temp" ]; then
+    		mkdir "$temp"
    	   fi
 	   
-	   unrar x $arquivo $temp
+	   unrar x "$arquivo" "$temp"
 
-	   cd $temp
+	   cd "$temp"
 	  
-	   zip -r $atual/${arquivo%.*}.zip *
+	   zip -r "$atual"/"${arquivo%.*}".zip *
 
-	   cd $atual
+	   cd "$atual"
 
-	   rm -fRd $temp
+	   rm -fRd "$temp"
 
 	done
 
