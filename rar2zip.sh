@@ -17,7 +17,7 @@ if hash unrar 2>/dev/null; then
 
 	   cd $temp
 	  
-	   zip -r $atual/$arquivo.zip *
+	   zip -r $atual/${arquivo%.*}.zip *
 
 	   cd $atual
 
