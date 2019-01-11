@@ -8,3 +8,5 @@
  Convert all rar files on a directory to zip
  ### comparefiles
  Compare two files. Sum check or file content
+ ### exercises
+ My basic bash/shell training exercises. Let's practice!
