@@ -1,0 +1,8 @@
+---
+# Used Commands
+require:
+  - whoami
+  - date
+  - cat
+  - groups
+  - cut
