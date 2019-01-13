@@ -1,0 +1,7 @@
+---
+# Used Commands
+require:
+  - ip
+  - awk
+  - wget
+  - netstat
