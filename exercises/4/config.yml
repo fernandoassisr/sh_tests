@@ -1,0 +1,6 @@
+---
+# Used Commands
+require:
+  - pidof
+  - date
+  - sleep
